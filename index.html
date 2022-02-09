@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cordel Moderno</title> 
     <style>  
+
+
         @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');  
 
         @import url('https://fonts.googleapis.com/css2?family=Oregano&family=Rowdies:wght@700&display=swap'); 
@@ -17,7 +19,18 @@
             --fonte-padrao: arial, verdana, helvética, sans-serif;
         }
 
-
+        *{
+            margin: 0px;
+            padding: 0px;
+        } 
+        body{
+            background-image: url('imagens/joaninha.jpg'); 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            height: 98vh; 
+            background-position: center center;
+            background-attachment: fixed;     
+        }
         header{
             background-color: black; 
             color: white; 
@@ -28,28 +41,73 @@
         header h1{
             font-size: 4.5em; 
             font-family: var(--fonte-cabeçalho);
+            padding: 20px;
         } 
         header p{
             font-family: var(--fonte-padrao); 
             font-size: 1.2em; 
-            margin-top: -30px;
+            margin-top: -10px;
+            margin-bottom: 30px;     
         } 
         main{
             text-align: justify;
             font-family: var(--fonte-texto); 
-            font-size: 2em; 
+            font-size: 2.4em; 
+            line-height: 2em;
             font-weight: bolder; 
-            margin-top: 150px;
-            margin-left: 20px;
-           
+            font-style: italic;                      
         } 
-        div.um{
-            background-color: transparent; 
-            width: 350px;
+        div.verso{
+            background-color: white; 
+            margin-bottom: 200px;
+            margin-right: -20px;  
+        } 
+        div#um{
+            padding-left: 35px;
+            padding-bottom: 150px;
+            padding-top: 50px;
         }
-
+        div#dois{
+            background-color: rgba(0, 0, 0, 0.397);
+            padding-top: -100px;
+            padding-left: 10px;
+            margin-top: -150px;
+            margin-left: 40px;
+            width: 370px;  
+        }
+        div#tres{
+            margin-top: -150px;
+            padding-left: 40px;
+            padding-top: 50px;
+        }
+        div#quatro{
+            margin-top: -200px;
+            padding-left: 35px; 
+            padding-top: 100px;
+            padding-bottom: 100px;
+        } 
+        div#cinco{
+            background-color: rgba(0, 0, 0, 0.397); 
+            padding-top: -100px;
+            padding-left: 10px;
+            margin-top: -150px;
+            margin-left: 40px;
+            width: 370px;
+        }
+        div#seis{
+            margin-top: -150px;
+            padding-left: 40px;
+            padding-top: 50px;
+        }
+        div#sete{
+            margin-top: -200px;
+            padding-left: 35px; 
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
         footer{
             background-color: black; 
+            margin-top: -200px;
             margin-left: -10px; 
             margin-right: -10px;
         } 
@@ -67,75 +125,79 @@
             text-decoration: underline; 
             color: cyan;
         }
+
+
     </style>
+
+    
 </head>
 <body> 
     <header>  
         <h1>Cordel Moderno</h1>
         <p>Por <strong>Milton Duarte</strong></p>
     </header> 
-
-    <main> 
-        <div class="um">
-            <p>Estou ficando cansado 
-                da tal tecnologia 
-                Só se fala por e-mail 
-                Mensagem curta e fria
-                Twitter e facebook
-                Antes que eu caduque 
+class="verso" id    <main> 
+        <div class="verso" id="um">
+            <p>Estou ficando cansado <br>
+                Da tal tecnologia <br>
+                Só se fala por e-mail <br>
+                Mensagem curta e fria <br>
+                Twitter e facebook <br>
+                Antes que eu caduque <br>
                 Vou dizer tudo em poesia. </p>
         </div> 
-        <div class="dois">
-            <p>Não é mais como era antes 
-                É tudo abreviado 
-                "Você" só tem duas letras 
-                O "O" e o "E" foi riscado 
-                Para declarar o amor 
-                basta botar uma flor 
+        <div class="verso" id="dois">
+            <p>Não é mais como era antes <br>
+                É tudo abreviado <br>
+                "Você" só tem duas letras <br> 
+                O "O" e o "E" foi riscado <br>
+                Para declarar o amor <br>
+                basta botar uma flor <br>
                 E um coração desenhado.</p>
         </div> 
-        <div>
-            <p>Arroba agora não pesa 
-                É parte de um endereço 
-                ponto final nem se usa 
-                Ou vai até no começo 
-                Agora é .com 
-                Se o saite é muito bom 
+        <div class="verso" id="tres">
+            <p>Arroba agora não pesa <br>
+                É parte de um endereço <br>
+                ponto final nem se usa <br>
+                Ou vai até no começo <br>
+                Agora é .com <br>
+                Se o saite é muito bom <br> 
                 Ele vale um alto preço. </p>
         </div> 
-        <div>
-            <p>Pra piorar a linguagem 
-                O emoticom é um risco 
-                Tem símbolo para tudo 
-                ponto e vírgula e um asterisco 
-                Um beijo sgnifica
-                Pra entender como fica
+        <div class="verso" id="quatro">
+            <p>Pra piorar a linguagem <br>
+                O emoticom é um risco <br>
+                Tem símbolo para tudo <br>
+                ponto e vírgula e um asterisco <br> 
+                Um beijo sgnifica <br>
+                Pra entender como fica <br>
                 Decifre esse rabisco. </p>
         </div> 
-        <div>
-            <p>Tenho saudade das cartas 
-                Escritas com a própria mão
-                Mandava no mês de junho 
-                Só chegava no verão 
-                Más matava a saudade 
-                Era texto de verdade 
-                Nas linhas do coração.  </p>
-        <div>
-            <p>Agora, escrevo e envio 
-                Chegando na mesma hora 
-                Más quando vou prosear 
-                A pessoa foi embora 
-                Abriu outro aplicativo 
-                O mundo ficou cativo 
+        <div class="verso" id="cinco">
+            <p>Tenho saudade das cartas <br>
+                Escritas com a própria mão <br>
+                Mandava no mês de junho <br>
+                Só chegava no verão <br>
+                Más matava a saudade <br>
+                Era texto de verdade <br>
+                Nas linhas do coração.  </p> 
+        </div>
+        <div class="verso" id="seis">
+            <p>Agora, escrevo e envio <br>
+                Chegando na mesma hora <br>
+                Más quando vou prosear <br>
+                A pessoa foi embora <br>
+                Abriu outro aplicativo <br>
+                O mundo ficou cativo <br>
                 Da tecnologia do agora.</p>
         </div> 
-        <div>
-            <p>Felizmente, pra orar 
-                Não precisa de internet 
-                Deus escuta todo mundo 
-                Se quiser, faça esse teste 
-                Dois pontos são dois joelhos 
-                Seus lábios são aparelhos 
+        <div class="verso" id="sete">
+            <p>Felizmente, pra orar <br>
+                Não precisa de internet <br>
+                Deus escuta todo mundo <br>
+                Se quiser, faça esse teste <br>
+                Dois pontos são dois joelhos <br>
+                Seus lábios são aparelhos <br>
                 Deixe que Deus interprete. 
                 </p>
         </div>
