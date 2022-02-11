@@ -16,102 +16,92 @@
         :root{
             --fonte-cabeçalho: 'Rowdies', cursive; 
             --fonte-texto: 'Oregano', cursive;  
-            --fonte-padrao: arial, verdana, helvética, sans-serif;
-        }
+            --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+        } 
+        
 
         *{
             margin: 0px;
-            padding: 0px;
-        } 
-        body{
-            background-image: url('imagens/joaninha.jpg'); 
-            background-repeat: no-repeat; 
-            background-size: cover; 
-            height: 98vh; 
-            background-position: center center;
-            background-attachment: fixed;     
+            padding: 0px; 
+             
+        }  
+
+        html, body{
+            min-height: 100vh; 
+            min-width: 100vw;
+
         }
+     
         header{
             background-color: black; 
             color: white; 
             text-align: center; 
-            margin: -22px; 
-            padding: 20px;
+            
         } 
         header h1{
             font-size: 4.5em; 
             font-family: var(--fonte-cabeçalho);
-            padding: 20px;
+            padding-top: 20px; 
+            font-variant: small-caps; 
+            font-size: 8vw;
         } 
         header p{
             font-family: var(--fonte-padrao); 
             font-size: 1.2em; 
-            margin-top: -10px;
-            margin-bottom: 30px;     
+            padding-bottom: 50px;   
+             
         } 
-        main{
-            text-align: justify;
-            font-family: var(--fonte-texto); 
-            font-size: 2.4em; 
-            line-height: 2em;
-            font-weight: bolder; 
-            font-style: italic;                      
-        } 
-        div.verso{
-            background-color: white; 
-            margin-bottom: 200px;
-            margin-right: -20px;  
-        } 
-        div#um{
-            padding-left: 35px;
-            padding-bottom: 150px;
-            padding-top: 50px;
-        }
-        div#dois{
-            background-color: rgba(0, 0, 0, 0.397);
-            padding-top: -100px;
-            padding-left: 10px;
-            margin-top: -150px;
-            margin-left: 40px;
-            width: 370px;  
+
+        header p a{
+            text-decoration: none;
             color: white;
         }
-        div#tres{
-            margin-top: -150px;
-            padding-left: 40px;
-            padding-top: 50px;
+        div{
+            font-family: var(--fonte-texto);
+            font-size: 2em;
+            font-style: italic;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            padding-left: 30px;
+            line-height: 2em; 
+            
+                         
+        }  
+
+        div.normal{
+            background-color: rgb(255, 255, 255);
+            
         }
-        div#quatro{
-            margin-top: -200px;
-            padding-left: 35px; 
-            padding-top: 100px;
-            padding-bottom: 100px;
-        } 
-        div#cinco{
-            background-color: rgba(0, 0, 0, 0.397); 
-            padding-top: -100px;
-            padding-left: 10px;
-            margin-top: -150px;
-            margin-left: 40px;
-            width: 370px; 
-            color: white;
+
+        div.imagem{
+           box-shadow: inset 6px 6px 10px 1px black;
+           color: white; 
+
         }
-        div#seis{
-            margin-top: -150px;
-            padding-left: 40px;
-            padding-top: 50px;
+        div.imagem p{
+            background-color: rgba(0, 0, 0, 0.404); 
+            display: inline-block;
+            padding: 10px;
         }
-        div#sete{
-            margin-top: -200px;
-            padding-left: 35px; 
-            padding-top: 100px;
-            padding-bottom: 100px;
+
+        div#img02{
+            background-image: url('imagens/joaninha.jpg'); 
+            background-size: cover; 
+            background-position: left center; 
+            background-attachment: fixed;
+
         }
+
+        div#img05{
+            background-image: url('imagens/rabisco.jpg'); 
+            background-size: cover; 
+            background-position: left center; 
+            background-attachment: fixed;
+        }
+        
         footer{
             background-color: black; 
-            margin-top: -200px;
-            margin-left: -10px; 
-            margin-right: -10px;
+           
         } 
         footer p{
             padding: 10px; 
@@ -136,10 +126,10 @@
 <body> 
     <header>  
         <h1>Cordel Moderno</h1>
-        <p>Por <strong>Milton Duarte</strong></p>
+        <p>Por <strong><a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" rel="external">Milton Duarte</a></strong></p>
     </header> 
-class="verso" id    <main> 
-        <div class="verso" id="um">
+<main> 
+        <div class="normal">
             <p>Estou ficando cansado <br>
                 Da tal tecnologia <br>
                 Só se fala por e-mail <br>
@@ -148,7 +138,7 @@ class="verso" id    <main>
                 Antes que eu caduque <br>
                 Vou dizer tudo em poesia. </p>
         </div> 
-        <div class="verso" id="dois">
+        <div class="imagem" id="img02">
             <p>Não é mais como era antes <br>
                 É tudo abreviado <br>
                 "Você" só tem duas letras <br> 
@@ -157,7 +147,7 @@ class="verso" id    <main>
                 basta botar uma flor <br>
                 E um coração desenhado.</p>
         </div> 
-        <div class="verso" id="tres">
+        <div class="normal">
             <p>Arroba agora não pesa <br>
                 É parte de um endereço <br>
                 ponto final nem se usa <br>
@@ -166,7 +156,7 @@ class="verso" id    <main>
                 Se o saite é muito bom <br> 
                 Ele vale um alto preço. </p>
         </div> 
-        <div class="verso" id="quatro">
+        <div class="normal">
             <p>Pra piorar a linguagem <br>
                 O emoticom é um risco <br>
                 Tem símbolo para tudo <br>
@@ -175,7 +165,7 @@ class="verso" id    <main>
                 Pra entender como fica <br>
                 Decifre esse rabisco. </p>
         </div> 
-        <div class="verso" id="cinco">
+        <div class="imagem" id="img05">
             <p>Tenho saudade das cartas <br>
                 Escritas com a própria mão <br>
                 Mandava no mês de junho <br>
@@ -184,7 +174,7 @@ class="verso" id    <main>
                 Era texto de verdade <br>
                 Nas linhas do coração.  </p> 
         </div>
-        <div class="verso" id="seis">
+        <div class="normal">
             <p>Agora, escrevo e envio <br>
                 Chegando na mesma hora <br>
                 Más quando vou prosear <br>
@@ -193,7 +183,7 @@ class="verso" id    <main>
                 O mundo ficou cativo <br>
                 Da tecnologia do agora.</p>
         </div> 
-        <div class="verso" id="sete">
+        <div class="normal">
             <p>Felizmente, pra orar <br>
                 Não precisa de internet <br>
                 Deus escuta todo mundo <br>
@@ -204,10 +194,10 @@ class="verso" id    <main>
                 </p>
         </div>
         
-    </main>
+</main>
 
     <footer> 
-        <p>Site criado por <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external"><abbr title="https://gustavoguanabara.github.io/"><strong>Gustavo Guanabara</strong></abbr></a> para o <a href="https://www.cursoemvideo.com/" target="_blank" rel="external"><abbr title="https://www.cursoemvideo.com"><strong>CursoemVídeo</strong></abbr></a></p>
+        <p>Site criado por <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external"><abbr title="https://gustavoguanabara.github.io/"><strong>Gustavo gustavoguanabara</strong></abbr></a> para o <a href="https://www.cursoemvideo.com/" target="_blank" rel="external"><abbr title="https://www.cursoemvideo.com"><strong>CursoemVídeo</strong></abbr></a></p>
     </footer>
     
 </body>
